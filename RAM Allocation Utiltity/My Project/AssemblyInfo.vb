@@ -11,9 +11,9 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("RAM Allocation Utility")> 
-<Assembly: AssemblyDescription("RAM Allocation Utility v1.0 by TortoiseWrath")> 
+<Assembly: AssemblyDescription("RAM Allocation Utility v1.1 by TortoiseWrath")> 
 <Assembly: AssemblyCompany("TortoiseWrath")> 
-<Assembly: AssemblyProduct("RAM Allocation Utiltity")> 
+<Assembly: AssemblyProduct("RAM Allocation Utility")> 
 <Assembly: AssemblyCopyright("© 2012 TortoiseWrath")> 
 <Assembly: AssemblyTrademark("")> 
 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0")> 
-<Assembly: AssemblyFileVersion("1.0")> 
+<Assembly: AssemblyVersion("1.1")> 
+<Assembly: AssemblyFileVersion("1.1")> 
 
 <Assembly: NeutralResourcesLanguageAttribute("en-US")> 

@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>RAM_Allocation_Utility.My.MyApplication</StartupObject>
     <RootNamespace>RAM_Allocation_Utility</RootNamespace>
-    <AssemblyName>RAM Allocation Utiltity</AssemblyName>
+    <AssemblyName>RAM Allocation Utility</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>

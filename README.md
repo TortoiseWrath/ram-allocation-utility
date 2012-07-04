@@ -33,6 +33,9 @@ All versions can be downloaded from [the releases page](https://github.com/Torto
 
 ## Changelog
 ```
+v1.1 July 4, 2012
+	 Fixed typo.
+	 Zipped executable to avoid false-positives by heuristic scanners.
 v1.0 July 4, 2012
 	 Rewrote program in VB.NET
 	 Added GUI.
@@ -45,10 +48,25 @@ v0.1 June 22, 2012
 	 Initial release.
 ```
 
+## Plans for future releases
+
+* Add an "advanced view" allowing users to adjust heap size manually.
+* Allow users to allocate percentages of RAM to Minecraft and create shortcuts to these percentages.
+* Create a configuration file or registry entry, allowing users to locate their Minecraft and Java executables manually (if need be).
+* Use system paths so that it won't break on non-English versions of Windows.
+* Add localizations.
+* Add proper icons.
+* Add an installer.
+* Create a 'lite' version with less features to consume less disk space (because 70 KB is clearly too much)
+* Improve error handling.
+* Convert code to C# or C++ to improve the launcher's memory usage.
+* Improve appearance.
+* Create versions for any other platforms on which it is necessary, except OS X.
+
 ## Screenshots
 
 The launcher:  
-![Screenshot of Minecraft 1.2.5 being launched with 3GB RAM via RAM Allocation Utility v1.0 on Windows 7 x64.](/docs/on.png)
+![Screenshot of Minecraft 1.2.5 being launched with 3GB RAM via RAM Allocation Utility v1.1 on Windows 7 x64.](/docs/on.png)
 
 Shortcuts:  
 ![](/docs/oo.png)

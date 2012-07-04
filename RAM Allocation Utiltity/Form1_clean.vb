@@ -12,6 +12,11 @@ Public Class Form1
     'Added slider
     'Added shortcut creation
 
+    '1.1 - July 4, 2012
+    'Fix misspellings
+    'Zip executable
+
+
     'Things to implement in a future release:
     'Advanced view with precise values and -Xms setting
     'Better appearance

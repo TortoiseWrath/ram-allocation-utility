@@ -3,30 +3,55 @@ I've seen some articles detailing how to launch Minecraft with more than the def
 
 Noticing that it was tedious to determine how much memory I wanted to use for Minecraft and entering the appropriate command at the command line every time I wanted to launch Minecraft, as well as feeling that existing launchers with a RAM allocation feature seemed a bit involved for such a simple purpose as this, I decided to develop an application that would allow me to perform this process with minimal user input.
 
-This is still in the very early stages of development, but it works well enough for me that I thought I should publish it in case anybody wants it.
+**UPDATE July 4, 2012:**  
+**v1.0 has been released!**  
+Everything is very different now.  
+Thanks to ChrisPerson for providing some of the code used in the detection of the Java location. Check out his RAM Expansion Tool over at [PlanetMinecraft](http://www.planetminecraft.com/mod/ram-expansion-tool/).
 
-The utility can be used by opening the file in Notepad, editing the location for the Minecraft executable on the second line (it defaults to C:\Minecraft.exe), and saving it to the location where you want the Minecraft icon.
+The interface is pretty intuitive, and I don't think it requires too much explanation here.  
+This has been tested on 64-bit Windows 7 with Minecraft 1.2.5 and 1.3.2. Further testing is planned.
 
-~~Tested with Minecraft 1.2.5 on Windows 7 64-bit; as far as I know, it should work with all Minecraft versions on Windows XP+.~~
+## Command-line options and shortcuts
+(added in v1.0)  
+A shortcut can be created on the desktop (this can be renamed or moved without breaking anything) to launch Minecraft with a certain amount of RAM.
 
-**UPDATE 1 July 2012:**  
-This has been tested with Minecraft 1.2.5; as far as I know, it should work with all versions of Minecraft.  
-This works fine on Windows 7 (though I've only tested it on 64-bit Windows 7, it should work with 32-bit as well).
+For example, you can create a shortcut to launch Minecraft with 1GB of RAM.
 
-To use this on Windows XP, the XP must be 32-bit and updated to SP3, and the [KB968930 patch](http://www.microsoft.com/en-us/download/details.aspx?id=16818) must be installed.
+The command-line switches are:  
+* /rf*nnn* - start Minecraft with *nnn* **bytes** of RAM (1 MiB = 1048576 bytes)
+* /d*nnn* - launch the launcher, emulating *nnn* free **bytes** of RAM (for debugging purposes)
 
-I haven't tested this on Vista yet; if the launcher flashes on the screen and does not ask for user input (as described by [MicroGames18](https://www.minecraftforum.net/comments/23154672)), Vista SP1 or SP2 and the aforementioned patch must be installed; the patch can be downloaded [here](http://www.microsoft.com/en-us/download/details.aspx?id=9864) (for 32-bit Vista) or [here](http://www.microsoft.com/en-us/download/details.aspx?id=9239) (for 64-bit Vista).
+## Installation
+*Should* be compatible with Windows XP and above.  
+Extract the executable from the ZIP file, and place it in the same folder as your minecraft.exe.  
+Alternatively, place it in whatever folder you like, and place minecraft.exe in the root of your C: drive.  
+Rename it to whatever you like.  
+Renaming or moving the executable will break any shortcuts you have created with it.
 
-It will probably work in Windows 8 upon release; I'll do further testing to see how it behaves on Vista and W8.
+## Download
+All versions can be downloaded from [the releases page](https://github.com/TortoiseWrath/ram-allocation-utility/tags).
+
+## Changelog
+```
+v1.0 July 4, 2012
+	 Rewrote program in VB.NET
+	 Added GUI.
+	 Granularized heap size options below 4 gibibytes available physical memory.
+	 Added command-line switches.
+	 Added shortcut creation feature.
+	 Better Minecraft and Java location algorithm.
+	 Fixed compatibility with Windows XP/Vista.
+v0.1 June 22, 2012
+	 Initial release.
+```
 
 ## Screenshots
 
-![Screenshot of RAM Allocation Utility v0.1 running on Windows 7 64-bit](/docs/o6.png) ![Screenshot of Minecraft 1.2.5 having been launched via RAM Allocation Utility v0.1 on Windows 7 64-bit](/docs/o7.png)
+The launcher:  
+![Screenshot of Minecraft 1.2.5 being launched with 3GB RAM via RAM Allocation Utility v1.0 on Windows 7 x64.](/docs/on.png)
 
-Launching Minecraft with 5GB of RAM (launching with >4GB requires 64-bit Windows and Java):
-![Screenshot of RAM Allocation Utility v0.1 running on Windows 7 64-bit](/docs/oi.png) ![Screenshot of Minecraft 1.2.5 having been launched with 5GB RAM via RAM Allocation Utility v0.1 on Windows 7 64-bit.](/docs/oj.png)
+Shortcuts:  
+![](/docs/oo.png)
 
-Running on Windows XP after installing patch: ![Screenshot of RAM Allocation Utility v0.1 running on Windows XP](/docs/oh.png)
-
-If you receive this error installing the patch on Windows XP, [this update](http://www.microsoft.com/en-us/download/details.aspx?id=16614) needs also be installed.  
-![Error message when installing update KB968930 on Windows XP SP3](/docs/og.png)
+Debug switch:  
+![](/docs/op.png)

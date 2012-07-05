@@ -16,6 +16,8 @@ Public Class Form1
     'Fix misspellings
     'Zip executable
 
+    '1.2 - July 5, 2012
+    'Fix shortcut creation not working properly
 
     'Things to implement in a future release:
     'Advanced view with precise values and -Xms setting
@@ -236,7 +238,7 @@ Public Class Form1
         'shortcut = CType(WshShell.CreateShortcut(desktopfolder + "\Launch.lnk"), IWshRuntimeLibrary.IWshShortcut)
         shortcut.TargetPath = Application.ExecutablePath
         Dim trackbar_value As ULong = Me.TrackBar1.Value
-        shortcut.Arguments = "-rf" + Convert.ToString(trackbar_value * snapTo * 1024 * 1024)
+        shortcut.Arguments = "/rf" + Convert.ToString(trackbar_value * snapTo * 1024 * 1024)
         shortcut.Save()
         MsgBox("Shortcut saved to desktop.")
     End Sub

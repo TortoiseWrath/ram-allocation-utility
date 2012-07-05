@@ -33,6 +33,8 @@ All versions can be downloaded from [the releases page](https://github.com/Torto
 
 ## Changelog
 ```
+v1.2 July 5, 2012
+	 Fixed shortcut creation.
 v1.1 July 4, 2012
 	 Fixed typo.
 	 Zipped executable to avoid false-positives by heuristic scanners.

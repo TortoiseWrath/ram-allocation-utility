@@ -3,10 +3,8 @@ I've seen some articles detailing how to launch Minecraft with more than the def
 
 Noticing that it was tedious to determine how much memory I wanted to use for Minecraft and entering the appropriate command at the command line every time I wanted to launch Minecraft, as well as feeling that existing launchers with a RAM allocation feature seemed a bit involved for such a simple purpose as this, I decided to develop an application that would allow me to perform this process with minimal user input.
 
-**UPDATE July 4, 2012:**  
-**v1.0 has been released!**  
-Everything is very different now.  
-Thanks to ChrisPerson for providing some of the code used in the detection of the Java location. Check out his RAM Expansion Tool over at [PlanetMinecraft](http://www.planetminecraft.com/mod/ram-expansion-tool/).
+**NOTE August 22, 2012:**
+Two people have reported an "unable to access jarfile" bug; I have tested this WFM with 1.3.2 on W7 x64. I will investigatee this further in the near future.
 
 The interface is pretty intuitive, and I don't think it requires too much explanation here.  
 This has been tested on 64-bit Windows 7 with Minecraft 1.2.5 and 1.3.2. Further testing is planned.

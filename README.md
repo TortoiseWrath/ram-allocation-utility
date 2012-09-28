@@ -3,7 +3,18 @@ I've seen some articles detailing how to launch Minecraft with more than the def
 
 Noticing that it was tedious to determine how much memory I wanted to use for Minecraft and entering the appropriate command at the command line every time I wanted to launch Minecraft, as well as feeling that existing launchers with a RAM allocation feature seemed a bit involved for such a simple purpose as this, I decided to develop an application that would allow me to perform this process with minimal user input.
 
-**NOTE August 22, 2012:**
+**NOTE September 28, 2012:**  
+Development here has effectively ground to a halt; as such, I've released the utility under the GPL. If anyone has ideas as to the cause of the problem, or can provide me detailed information about their computer, please let me know, either by replying to this thread or emailing me from my website.
+
+As I said, this has worked fine for me in all of the testcases I've had a chance to put together, so if the utility is something in which you'd be interested, it's still definitely worth a try to use it on your system.
+
+My primary system, on which this works perfectly and consistently, is a Core i5 build with 8GB RAM, Minecraft 1.3.2, 64-bit Windows 7, Java 7, and .NET Framework 6 (or whatever the one that was released in 2008 was). I have tried this on a Core i7 8GB laptop with roughly the same software, and it worked there as well. However, I haven't had a chance to try and get this running on any VMs or other PCs, so I am working with a very limited sample set.
+
+Just in case I do get a chance to put some more time into this, again, please send me any information you can about your computer, your setup, and whether or not this works. Positive samples are still samples nonetheless.
+
+VB.NET 2008 source [here](https://github.com/TortoiseWrath/ram-allocation-utility).
+
+**NOTE August 22, 2012:**  
 ~~Two~~ Three people have reported an "unable to access jarfile" bug; I have tested this WFM with 1.3.2 on W7 x64. I will investigatee this further in the near future.
 
 The interface is pretty intuitive, and I don't think it requires too much explanation here.  
@@ -27,6 +38,7 @@ Rename it to whatever you like.
 Renaming or moving the executable will break any shortcuts you have created with it.
 
 ## Download
+**PLEASE READ NOTE ABOVE (September 28)**  
 All versions can be downloaded from [the releases page](https://github.com/TortoiseWrath/ram-allocation-utility/tags).
 
 ## Changelog

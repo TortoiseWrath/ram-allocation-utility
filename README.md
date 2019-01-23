@@ -1,4 +1,29 @@
-# RAM Allocation Utility
+# OBSOLETE
+
+The functionality afforded by this utility is now provided by the standard Minecraft launcher. Use that instead. This project has seen no development since July 2012 and is archived here for historical purposes. A version of the final version of the [Minecraft Forum post](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-tools/1263912-launcher-ram-allocation-utility) is reproduced below with updated links. Past versions of the source code and this documentation are committed and available in this repository.
+
+## License
+
+```
+RAM Allocation Utility for Minecraft 1.2/1.3
+Copyright (C) 2012  Sean Gillen
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+## Original readme
+
 I've seen some articles detailing how to launch Minecraft with more than the default 128-512 MB of RAM allocated to it to improve performance; doing this greatly improved the performance for me.
 
 Noticing that it was tedious to determine how much memory I wanted to use for Minecraft and entering the appropriate command at the command line every time I wanted to launch Minecraft, as well as feeling that existing launchers with a RAM allocation feature seemed a bit involved for such a simple purpose as this, I decided to develop an application that would allow me to perform this process with minimal user input.
